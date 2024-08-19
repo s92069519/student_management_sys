@@ -505,6 +505,9 @@
 .bottom-data .reminders .task-list li.completed{
     border-left: 10px solid var(--sucess);
 }
+.bottom-data .reminders .task-list li.non-completed{
+    border-left: 10px solid var(--danger);
+}
 .bottom-data .reminders .task-list li:last-child{
     margin-bottom: 0;
 }
