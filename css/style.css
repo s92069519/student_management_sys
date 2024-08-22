@@ -38,6 +38,7 @@
     html{
         overflow-x: hidden;
     }
+
     body.dark{
         --light: #181a1e;
         --gray : #25252c;
@@ -163,6 +164,7 @@
     .side-menu li a.logout{
         color:var(--danger);
     }
+
     .content{
         position: relative;
         width: calc(100% - 230px);
@@ -176,6 +178,7 @@
     .content nav{
         height:56px;
         background: var(--light);
+        color: var(--dark);
         padding: 0 24px 0 0;
         display: flex;
         align-items: center;
@@ -316,6 +319,7 @@
         display: flex;
         align-items: center;
         grid-gap:16px;
+        color: var(--dark);
     }
 
     .breadcrump li{
@@ -359,6 +363,7 @@
         align-items: center;
         grid-gap:24px;
         cursor: pointer;
+        color: var(--dark);
     }
     .insights li .bx{
         width: 80px;
@@ -550,6 +555,20 @@
     }
     .content nav form.show~.notif, .content nav from.show~.profile{
         display: none;
+    }
+
+    .content main .insights{
+        grid-template-columns: 1fr;
+    }
+
+    .content main .bottom-data .header {
+        max-width: 340px;
+    }
+    .content main .bottom-data .orders table {
+        min-width: 340px;
+    }
+    .content main .bottom-data .reminders .task-list{
+        min-width: 340px;
     }
     
 }
