@@ -155,7 +155,7 @@
         transition: all 0.3s ease;
     }
     .side-menu li a .bx{
-        min-width: 45px;
+        min-width: 46px;
         display: flex;
         font-size: 1.6rem;
         justify-content: center;
