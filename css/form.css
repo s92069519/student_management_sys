@@ -8,6 +8,7 @@
     --primary: #1976D2;
     --light-primary: #CFE8FF;
     --gray: #eee;
+    --text_gray:#656565;
     --dark: #363949;
     --danger: #D32F2F;
     --light-danger: #FECDD3;
@@ -45,20 +46,35 @@ form{
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+    
 }
-.FORM form .row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+form h1{
+  text-align: center;
+  color: var(--primary);
 }
-.col{
-  width: calc(100% / 2 - 20px);
+form label{
+  color: var(--text_gray);
 }
 form input{
   padding: 10px;
   border-radius: 5px;
   border: none;
   width: calc(100% - 20px);
+  font-size: 16px;
+  outline-offset: 1px;
+  outline-color: var(--primary);
+}
+
+.FORM form .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px ;
+}
+.col{
+  width: calc(100% / 2 - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
