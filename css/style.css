@@ -572,3 +572,102 @@
     }
     
 }
+
+
+
+/*  */
+.studentFormDetails{
+    width: 100%;
+    background: var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Student-FORM{
+    background: var(--light);
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+form h1{
+  text-align: center;
+  color: var(--primary);
+}
+form label{
+  color: var(--text_gray);
+}
+form input[type="text"],
+[type="email"],
+[type="date"],select{
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  width: calc(100%);
+  font-size: 16px;
+  outline-offset: 1px;
+  outline-color: var(--primary);
+  box-sizing: border-box;
+}
+
+.Student-FORM form .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+.col{
+  width: calc(100% / 2 - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.radio-box{
+  display: flex;
+  padding: 15px 15px 15px 0;
+  gap: 10px;
+  font-size: 16px;
+}
+form input[type="radio"]{
+width:16px;
+height:16px;
+}
+.gender-details{
+  display: flex;
+}
+.submit-btn{
+  width: 250px;
+  padding: 15px;
+  border: none;
+  background: var(--sucess);
+  color: var(--light);
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.btn-details{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width:768px) {
+  .box .FORM{
+    width:85%;
+  }
+  .col{
+    width: 100%;
+  }
+  
+}
