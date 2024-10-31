@@ -15,10 +15,10 @@
         </a>
     
         <ul class="side-menu">
-            <li><a href="#"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
-            <li class="active"><a href="#"><i class='bx bxs-analyse' ></i> Analyse</a></li>
-            <li><a href="#"><i class='bx bxs-user-plus'></i> Add Student</a></li>
-            <li><a href="#"><i class='bx bxs-user-detail'></i> details </a></li>
+            <li><a href="Dashboard.html"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+            <li><a href="#"><i class='bx bxs-analyse' ></i> Analyse</a></li>
+            <li class="active"><a href="student-add-form.html"><i class='bx bxs-user-plus'></i> Add Student</a></li>
+            <li><a href="Student-details.html"><i class='bx bxs-user-detail'></i> details </a></li>
             <li><a href="#"><i class='bx bx-refresh'></i> Update </a></li>
             <li><a href="#"><i class='bx bxs-cog' ></i>Setting</a></li>
         </ul>
@@ -53,14 +53,14 @@
     <main>
         <div class="header">
             <div class="left">
-                <h1>Dashboard</h1>
+                <h1>New Student Registation </h1>
                 <ul class="breadcrump">
-                    <li><a href="#">Analytics</a></li>/
-                    <li class="active">Shop</li>
+                    <li><a href="#">Dashboard</a></li>/
+                    <li class="active">Add-Student</li>
                 </ul>
             </div>
             <a href="#" class="report"><i class='bx bx-cloud-download'></i>
-                <span>Download CSV</span>
+                <span>Download PDF</span>
             </a>
         </div>
 
@@ -102,7 +102,7 @@
                 </div>
                     
                 <div class="row">
-                    <label class="form-txt">Faculte</label>
+                    <label class="form-txt">Study Center</label>
                     <select name="" id="">
                         <option value="">Ampara</option>
                         <option value="">Kalmunai</option>
@@ -138,6 +138,15 @@
                             <option value="">BSE</option>
                         </select>
                     </div>
+                    <div class="row">
+                        
+                        <div class="upload-container" onclick="document.getElementById('fileInput').click()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0L8 4h2v6h4V4h2l-4-4zm0 16c-2.209 0-4-1.791-4-4H4c0 4.418 3.582 8 8 8s8-3.582 8-8h-4c0 2.209-1.791 4-4 4zm0 8C5.373 24 0 18.627 0 12 0 5.373 5.373 0 12 0c6.627 0 12 5.373 12 12 0 6.627-5.373 12-12 12z"/></svg>
+                            <p>Click to upload or drag and drop</p>
+                            <p class="sub-text">SVG, PNG, JPG or GIF (MAX. 1200×1200px)</p>
+                            <input type="file" id="fileInput" class="file-input" />
+                        </div>
+                     </div>
                 <div class="btn-details">
                     <input type="submit" value="Submit" class="submit-btn">
                 </div>

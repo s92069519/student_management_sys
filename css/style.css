@@ -43,6 +43,7 @@
         --light: #181a1e;
         --gray : #25252c;
         --dark : #fbfbfb;
+        --light-primary: #677685;
     }
 
     body{
@@ -575,7 +576,7 @@
 
 
 
-/*  */
+/* ----------------------------------------------------   ---------------------------------------- */
 .studentFormDetails{
     width: 100%;
     background: var(--gray);
@@ -597,6 +598,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    color: var(--dark);
     
 }
 form h1{
@@ -618,6 +620,51 @@ form input[type="text"],
   outline-color: var(--primary);
   box-sizing: border-box;
 }
+
+/* input file upload */
+
+.upload-container {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    padding: 10px 0px;
+    border: 2px dashed #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #888;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Upload icon */
+.upload-container svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    fill: #888;
+}
+
+/* Text styles */
+.upload-container p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.upload-container .sub-text {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Input styling */
+.file-input {
+    display: none;
+}
+
+
 
 .Student-FORM form .row{
     display: flex;
@@ -661,13 +708,66 @@ height:16px;
   justify-content: center;
 }
 
-
 @media screen and (max-width:768px) {
-  .box .FORM{
-    width:85%;
+     .Student-FORM{
+      width:100%;
+    }
+    .col{
+      width: 100%;
+    }
+    
   }
-  .col{
-    width: 100%;
-  }
-  
+
+/*-----------------Table design------------------------*/
+
+.table-content{
+  overflow: auto;
+  padding-bottom: 50px;
+  color: var(--dark);
 }
+
+.table-content table th{
+    background: var(--light-primary);
+    min-width: 150px;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.table-content .table-header th:first-child{
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+    background-color: transparent;
+    min-width: 60px;
+}
+.table-content .table-header th:nth-child(2){
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+}
+.table-content .table-header th:last-child{
+    border-top-right-radius:15px;
+    border-bottom-right-radius: 15px;
+}
+.table-content table td{
+    text-align: center;
+    background-color: var(--light);
+    padding: 10px;
+}
+.table-content table td:first-child{
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+    min-width: 60px;
+}
+.table-content table td:last-child{
+    border-top-right-radius:15px;
+    border-bottom-right-radius: 15px;
+}
+.table-content table tr .td-name{
+    width: 400px;
+}
+.table-content table .student-prf-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+

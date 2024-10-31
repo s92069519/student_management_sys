@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Design</title>
+    <style>
+        /* Container */
+        .upload-container {
+            width: 100%;
+            max-width: 800px;
+            height: 200px;
+            border: 2px dashed #d3d3d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #888;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* Upload icon */
+        .upload-container svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 20px;
+            fill: #888;
+        }
+
+        /* Text styles */
+        .upload-container p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .upload-container .sub-text {
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        /* Input styling */
+        .file-input {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="upload-container" onclick="document.getElementById('fileInput').click()">
+    <!-- Icon (you can replace this with an SVG icon) -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0L8 4h2v6h4V4h2l-4-4zm0 16c-2.209 0-4-1.791-4-4H4c0 4.418 3.582 8 8 8s8-3.582 8-8h-4c0 2.209-1.791 4-4 4zm0 8C5.373 24 0 18.627 0 12 0 5.373 5.373 0 12 0c6.627 0 12 5.373 12 12 0 6.627-5.373 12-12 12z"/></svg>
+    <p>Click to upload or drag and drop</p>
+    <p class="sub-text">SVG, PNG, JPG or GIF (MAX. 800×400px)</p>
+    <input type="file" id="fileInput" class="file-input" />
+</div>
+
+</body>
+</html>
